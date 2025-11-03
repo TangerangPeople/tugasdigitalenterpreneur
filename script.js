@@ -7,6 +7,14 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
+// Close mobile menu when clicking on a nav link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
+
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
