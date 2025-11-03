@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Mie Ayam & Mie Yamin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mie Ayam & Mie Yamin</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Menu Kami</h2>
+            <p>Nikmati berbagai variasi mie ayam dan mie yamin yang lezat dengan harga terjangkau.</p>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="mie-ayam">Mie Ayam</button>
+                <button class="category-btn" data-category="mie-yamin">Mie Yamin</button>
+                <button class="category-btn" data-category="minuman">Minuman</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Mie Ayam -->
+                <div class="menu-item" data-category="mie-ayam">
+                    <img src="images/special.jpg" alt="Mie Ayam Special">
+                    <div class="menu-item-content">
+                        <h3>Mie Ayam Special</h3>
+                        <p>Mie ayam dengan topping ayam suwir, pangsit, dan sayuran segar.</p>
+                        <span class="price">Rp 25.000</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mie-ayam">
+                    <img src="images/mieayam.jpeg" alt="Mie Ayam Bakso">
+                    <div class="menu-item-content">
+                        <h3>Mie Ayam Bakso</h3>
+                        <p>Mie ayam dengan tambahan bakso sapi yang kenyal.</p>
+                        <span class="price">Rp 28.000</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mie-ayam">
+                    <img src="images/mie-ayam-ceker.jpg" alt="Mie Ayam Ceker">
+                    <div class="menu-item-content">
+                        <h3>Mie Ayam Ceker</h3>
+                        <p>Mie ayam dengan ceker ayam yang gurih dan empuk.</p>
+                        <span class="price">Rp 30.000</span>
+                    </div>
+                </div>
+
+                <!-- Mie Yamin -->
+                <div class="menu-item" data-category="mie-yamin">
+                    <img src="images/mie-yamin.jpg" alt="Mie Yamin Special">
+                    <div class="menu-item-content">
+                        <h3>Mie Yamin Special</h3>
+                        <p>Mie yamin dengan topping lengkap dan kuah kaldu yang kaya rasa.</p>
+                        <span class="price">Rp 27.000</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mie-yamin">
+                    <img src="images/yaminpangsit.jpg" alt="Mie Yamin Sayur">
+                    <div class="menu-item-content">
+                        <h3>Mie Yamin Pangsit Basah</h3>
+                        <p>Mie yamin dengan tambahan sayuran segar dan topping ayam.</p>
+                        <span class="price">Rp 26.000</span>
+                    </div>
+                </div>
+
+                <!-- Minuman -->
+                <div class="menu-item" data-category="minuman">
+                    <img src="images/es.jpeg" alt="Es Teh">
+                    <div class="menu-item-content">
+                        <h3>Es Teh</h3>
+                        <p>Teh dingin yang menyegarkan, cocok untuk menemani hidangan mie.</p>
+                        <span class="price">Rp 5.000</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <img src="images/jeruk.jpg" alt="Jus Jeruk">
+                    <div class="menu-item-content">
+                        <h3>Jus Jeruk</h3>
+                        <p>Jus jeruk segar yang kaya vitamin C.</p>
+                        <span class="price">Rp 8.000</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <img src="images/kelapa.jpg" alt="Es Kelapa">
+                    <div class="menu-item-content">
+                        <h3>Es Kelapa</h3>
+                        <p>Es kelapa muda yang alami dan menyehatkan.</p>
+                        <span class="price">Rp 10.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mie Hero & Yamin Hero. Semua hak dilindungi.</p>
+            <div class="social-links">
+                <a href="facebook.html">Facebook</a>
+                <a href="instagram.html">Instagram</a>
+                <a href="twitter.html">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
