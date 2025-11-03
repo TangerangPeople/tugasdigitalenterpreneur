@@ -3,28 +3,38 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
 if (hamburger && navLinks) {
-    hamburger.addEventListener('click', (e) => {
+    // Function to toggle menu
+    const toggleMenu = (e) => {
         e.preventDefault();
         e.stopPropagation();
         navLinks.classList.toggle('active');
         hamburger.classList.toggle('active');
-    });
+    };
+
+    // Add both click and touchstart events for better mobile support
+    hamburger.addEventListener('click', toggleMenu);
+    hamburger.addEventListener('touchstart', toggleMenu, { passive: false });
 
     // Close mobile menu when clicking on a nav link
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
+        const closeMenu = () => {
             navLinks.classList.remove('active');
             hamburger.classList.remove('active');
-        });
+        };
+        link.addEventListener('click', closeMenu);
+        link.addEventListener('touchstart', closeMenu, { passive: false });
     });
 
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
+    // Close menu when clicking/tapping outside
+    const closeMenuOutside = (e) => {
         if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
             navLinks.classList.remove('active');
             hamburger.classList.remove('active');
         }
-    });
+    };
+
+    document.addEventListener('click', closeMenuOutside);
+    document.addEventListener('touchstart', closeMenuOutside, { passive: false });
 }
 
 // Smooth Scrolling for Navigation Links
